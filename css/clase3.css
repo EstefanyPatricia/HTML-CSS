@@ -1,0 +1,46 @@
+/*Selector universal*/
+*{
+    margin: 10;
+}
+
+/*Selector de tipo*/
+h1{
+    color: crimson;
+}
+
+/*Selector de clase*/
+.header{
+    color: coral;
+    text-align: center;
+}
+
+/*Selector de Id*/
+#animales{
+    text-align: center;
+}
+
+/*Pseudo clases*/
+p:first-child{
+    color: darkgreen;
+}
+p:last-child{
+    color: darkmagenta;
+}
+p:nth-child(2n){
+    color: darkviolet;
+}
+
+/*Pseudo Elemento*/
+p::after {
+    content: " mishi:)";
+  }
+
+p::before{
+    content: "Ex=";
+    color: lightblue;
+}
+p::first-letter{
+      color: deeppink;
+      font-size: 30px;
+      font-style: inherit;
+  }
