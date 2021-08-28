@@ -44,3 +44,21 @@ p::first-letter{
       font-size: 30px;
       font-style: inherit;
   }
+
+.caja1{
+      width: 20px;
+      height: 20px;
+      background-color: #faa307;
+      padding: 20px;
+      border: 2px solid #aacc00;
+      margin: 10px;
+  }
+
+.caja2{
+    width: 20px;
+    height: 20px;
+    background-color: #f3c4fb;
+    padding: 20px;
+    border: 2px solid #f08080;
+    margin: 40px 30px 20px 10px;
+}
