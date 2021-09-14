@@ -97,3 +97,52 @@ header img{
 ::placeholder{
     color: white;
 }
+
+
+/*Creacion del casurel*/
+.carusel{
+    width: 100%;
+    /*Crear un scroll en el carusel*/
+    overflow: scroll;
+    padding : 30px;
+    /*Todos los elemnos se van a posicionar apartir de este elemento que sigan en la misma linea y no se montan para abajo */
+    position: relative;
+}
+
+.carusel__container{
+    /*Funcion dedicada a que los elementos */
+    white-space: nowrap;
+    margin: 75px 0px;
+    /*evitar que la imagen  se corte cuendo se agramde*/
+    padding-bottom: 15px;
+}
+
+.carusel-item{
+    background: #deaaff;
+    width: 200px;
+    height: 250px;
+    border-radius: 25px;
+    /*evita distrocion al elemento al agrandar*/
+    overflow: hidden;
+    margin-left: 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms;
+    /*hace que el primer item no se vaya hacea el borde*/
+    transform-origin: center left;
+}
+
+.carusel-item:hover ~ .carusel-item{
+    transform: translate3d(100px, 0px, 0px);
+}
+
+.carusel__container:hover .carusel-item{
+    opacity: 30%;
+}
+
+.carusel__container:hover .carusel-item:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+
