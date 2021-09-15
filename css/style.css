@@ -105,12 +105,12 @@ header img{
     /*Crear un scroll en el carusel*/
     overflow: scroll;
     padding : 30px;
-    /*Todos los elemnos se van a posicionar apartir de este elemento que sigan en la misma linea y no se montan para abajo */
+    /*Todos los elemnos se van a posicionar apartir de este ele */
     position: relative;
 }
 
 .carusel__container{
-    /*Funcion dedicada a que los elementos */
+    /*Funcion dedicada a que los elementos  sigan en una misma linea no se montan para abajo como en block*/
     white-space: nowrap;
     margin: 75px 0px;
     /*evitar que la imagen  se corte cuendo se agramde*/
@@ -126,23 +126,65 @@ header img{
     overflow: hidden;
     margin-left: 15px;
     display: inline-block;
+    /*Camabia el cursor cuando esta sobre el item*/
     cursor: pointer;
+    /*Velocidad  de transicion a una velocidad especifica*/
     transition: 450ms;
-    /*hace que el primer item no se vaya hacea el borde*/
+    /*hace que el primer item no se vaya hacia el borde*/
     transform-origin: center left;
+    position: relative;
 }
 
+
+/*
+    1- .carusel-item:hover--> Slecciona el item del carrusel cuando esta  con el mouse
+    2* "~" sleciona todos los elementos nemos el elemento siguiente.*/
+
 .carusel-item:hover ~ .carusel-item{
+    /*Mueve a lax positiva 100px [x,y,z], si se usa "traslate" no aplica el eje z*/
     transform: translate3d(100px, 0px, 0px);
 }
 
+/*Selecciona el container cuando esta en el hover y aplica sobre los .carusel-item*/
 .carusel__container:hover .carusel-item{
+    /*Opacidad del 30%*/
     opacity: 30%;
 }
 
 .carusel__container:hover .carusel-item:hover{
+    /*Cuando pasamos el mause encima del item aumenta su escala en 50%*/
     transform: scale(1.5);
+    /*Opacidad normal*/
     opacity: 1;
+}
+
+.carusel-item__img{
+    width: 200px;
+    height: 250px;
+    /*evita distorcion de la imagen*/
+    object-fit: cover;
+}
+
+.carusel-item__details{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    font-size: 10px;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.carusel-item__details:hover{
+    opacity: 1;
+}
+
+.carusel-item__details-img{
+    width: 30px;
+    height: 30px;
 }
 
 
