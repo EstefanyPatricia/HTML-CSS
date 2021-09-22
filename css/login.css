@@ -17,3 +17,57 @@ header img{
     margin-left: 10px;
     margin-top: 5px;
 }
+
+.login{
+    background: linear-gradient(#B594B6 , #fde2e4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.login__container{
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+}
+
+.login__conatiner--form{
+    display: flex;
+    flex-direction:  column;
+
+}
+
+.login__conatiner--form label{
+    font-size: 14px;
+}
+
+.login__container--remenber-me{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login__container--remenber-me a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.login__container--remenber-me a:hover{
+    text-decoration: underline;
+}
+
+.login__conatiner--social-media > div{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
