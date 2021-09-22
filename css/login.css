@@ -70,4 +70,10 @@ header img{
     align-items: center;
     font-size: 14px;
     margin-bottom: 10px;
+
+}
+
+.login__conatiner--social-media img{
+    width: 40px;
+    height: 40px;
 }
