@@ -1,12 +1,11 @@
 body{
     margin:0px;
-    background: #B594B6;
+    background: linear-gradient(#B594B6 , #edadc7);
 }
 
 header{
     width: 100%;
     height: 80px;
-    background-color: #B594B6;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +18,6 @@ header img{
 }
 
 .login{
-    background: linear-gradient(#B594B6 , #fde2e4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,14 +27,18 @@ header img{
 }
 
 .login__container{
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
     text-align: center;
-    border: 2px solid white;
+    border: 2px solid #723c70;
     border-radius: 40px;
     color: white;
     padding: 60px 68px 40px;
     min-height: 700px;
     width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
 }
 
 .login__conatiner--form{
@@ -76,4 +78,79 @@ header img{
 .login__conatiner--social-media img{
     width: 40px;
     height: 40px;
+}
+
+.login__conatiner--social-media > div > img{
+   width: 30px;
+   margin-right: 18px;
+
+}
+
+.login__container--registro{
+    font-size: 14px;
+}
+
+.login__container--registro a{
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.login__container--registro a:hover{
+   text-decoration: underline;
+}
+
+.input{
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    font-family:  Helvetica;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+
+::placeholder{
+    color: white;
+}
+
+.button{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Helvetica;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+.footer{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+.footer a{
+   color: white;
+   cursor: pointer;
+   font-size: 14px;
+   padding-left: 30px;
+   text-decoration: none;
+
+}
+
+.footer a:hover{
+    text-decoration: underline;
 }
