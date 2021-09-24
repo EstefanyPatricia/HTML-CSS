@@ -74,6 +74,10 @@ header img{
 
 .main{
     height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .main__titulo{
@@ -87,11 +91,13 @@ header img{
     background-color: #deaaff;
     border: 2px white solid;
     border-radius: 25px;
-    padding: 0px 20px;
+    padding: 0px 40px;
     height: 25px;
     font-size: 16px;
     width: 70%;
     color: black;
+    height: 45px;
+    outline: none;
 }
 
 ::placeholder{
@@ -104,9 +110,11 @@ header img{
     width: 100%;
     /*Crear un scroll en el carusel*/
     overflow: scroll;
-    padding : 30px;
+    
     /*Todos los elemnos se van a posicionar apartir de este ele */
     position: relative;
+    overflow-x:scroll; /*quitar el carusel vertical*/
+    overflow-y:hidden;/*quitar el carusel vertical*/
 }
 
 .carusel__container{
@@ -176,6 +184,11 @@ header img{
     right: 0px;
     bottom: 0px;
     left: 0px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: white;
 }
 
 .carusel-item__details:hover{
@@ -187,4 +200,25 @@ header img{
     height: 30px;
 }
 
+.footer{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+.footer a{
+   color: white;
+   cursor: pointer;
+   font-size: 20px;
+   padding-left: 30px;
+   text-decoration: none;
+
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
 
