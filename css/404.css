@@ -1,0 +1,44 @@
+body{
+    margin:0px;
+    background: #B594B6;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #B594B6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header img{
+    height: 80px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.main{
+    width: 100%;
+    overflow: hidden;
+}
+
+.main__container_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+}
+
+.main__container__texto{
+    color: rgb(17, 17, 17);
+    height: 30px;
+    margin: 12px;
+
+}
+
+.main__container_img:hover{
+    transform: scale(1.2);
+}
